@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>como deve me chamar</title>
+    <style>
+        body{
+            font-family:'Courier New', Courier, monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150vh;
+            background-image: linear-gradient(45deg, rgba(153, 57, 243, 0.856),rgba(175, 122, 236, 0.63));
+
+        }
+        #loginn{
+            background-color: rgba(71, 16, 116, 0.644);
+            position:absolute;
+            transform: translate(-50%, -50%);
+            padding: 50px;
+            border-radius: 20px;
+            color: white;
+            margin: 400px;
+            margin-right: 0px;
+            
+        }
+        input{
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 15px; 
+        }
+        button{
+            background-color: rgb(172, 70, 255);
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 10px;
+            color: white;
+
+        }
+        input:hover{
+             background-color: rgba(181, 101, 247, 0.705); 
+             cursor: pointer;
+            
+        }
+        #patria{
+        width: 160px;
+        position: absolute;
+        margin-left:270px;
+        top: 20%        
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div id = loginn>
+        <h1>Tá pronto?</h1>
+        <input type="text" placeholder="como é meu nome?" id="login">
+        <br> <br>
+        <input type="password" placeholder="nossa música" id="senha">
+        <br><br>
+        <input type="submit" onclick = "logar(); return false">
+    
+    <div>
+        <img id = patria src="capitaopatria.webp" alt="capitaopatria">
+        <p>Tá izi, mas qualquer coisa a dica ta por ai(aba)</p>
+    
+    </div>
+   
+
+    <script>
+
+        function logar(){
+
+            var login  = document.getElementById('login').value
+            var senha = document.getElementById('senha').value
+
+            if(login == "Amor" && senha == "Gods"){
+                alert('te amo sabia?');
+                location.href = "euvoucoringaar.html";
+            }else{
+                alert('Como não sabe uma coisa fácil dessas? a primeira letra é maiúscula');
+            }
+        }
+
+    
+    </script>
+   
+</body>
+</body>
+</html>
+
